@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 
-# nearest-port
+# nearest-ports-along-route
 
 Searoute.py waypoint generation + 1 NM route densification + “ports within N nautical miles” lookup along a route.
 
