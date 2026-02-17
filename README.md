@@ -1,3 +1,8 @@
+[![CI](https://github.com/tayljordan/nearest_port_along_route/actions/workflows/ci.yml/badge.svg)](https://github.com/tayljordan/nearest_port_along_route/actions/workflows/ci.yml)
+[![Ruff](https://img.shields.io/badge/code%20style-ruff-261230.svg)](https://github.com/astral-sh/ruff)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+
 # nearest-port
 
 Searoute.py waypoint generation + 1 NM route densification + “ports within N nautical miles” lookup along a route.
