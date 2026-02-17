@@ -1,0 +1,38 @@
+# FILE: pyproject.toml
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nearest-port"
+version = "0.1.0"
+description = "Sea-route waypoint generation, 1nm densification, and nearby port lookup (nautical miles)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Jordan Taylor" }]
+dependencies = [
+  "searoute>=1.4.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.6.0",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["route_creation*", "route_increments*", "nearby_ports*"]
+
+[tool.setuptools.package-data]
+nearby_ports = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]

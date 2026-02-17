@@ -1,0 +1,2 @@
+# FILE: MANIFEST.in
+recursive-include nearby_ports/data *.json
